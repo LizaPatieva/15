@@ -1,0 +1,19 @@
+#include <iostream> //Подключение библиотеки iostream
+using namespace std; 
+int sign(float x) //Создаем функцию
+{
+  if (x<0)
+  return -1;
+  if (x==0)
+  return 0;
+  if (x>0)
+  return 1;
+}
+ int main (void) //Точка входа в программу
+{
+  float a, b; //Объявляем переменные a и b
+  printf ("A:"); //Выводим на экран 
+  scanf("%f",&b); //Вводим значение переменной b
+  printf("Sign(A)+Sign(B):%i/n", sign(a)+sign(b));//Выводим результат на экран
+  return 0; //Возврат целочисленного значения перед завершением функции
+}
